@@ -22,6 +22,9 @@ public class SistemaSolar extends BaseEntity {
     private Double ratioMinimo;
     private Integer numeroStormtroopers;
 
+    
+    // Un sistema solar tiene muchos planetas
+
     @PodamExclude
     @OneToMany(mappedBy = "sistemaSolar")
     private List<PlanetaEntity> planetas = new ArrayList<>();

@@ -13,6 +13,8 @@ public class PlanetaEntity extends BaseEntity {
     private Long poblacion;   
     private Double diametroKm;
 
+
+    // Cada planeta pertenece a UN solo sistema
     @PodamExclude
     @ManyToOne
     private SistemaSolar sistemaSolar;   
